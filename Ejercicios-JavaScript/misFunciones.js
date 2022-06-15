@@ -31,3 +31,15 @@ function cambiarunidades(id, value) {
         document.lasunidades.unid_pie.value = 3*value;
     }
 }
+function convertirGr(id) {
+    var grad, rad;
+    if(id=="grados"){
+        grad = document.getElementById(elementId:"grados") . value;
+        rad = (grad*math.PI)/180;
+    }else if(id=="radianes"){
+        rad = document.getElementById(elementId:"radianes"). value;
+        grad = (rad*180)/math.PI
+    }
+    document.getElementById(elementId:"grados").value = grad;
+    document.getElementById(elementId:"grados").value = rad;
+}
